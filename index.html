@@ -102,7 +102,7 @@
                                 <a class="nav-link" href="#">Compras</a>
                             </li>
                             <li class="nav-item text-dark">
-                                <a class="nav-link" href="#"><i class="bi bi-cart2 fs-20px"></i></a>
+                                <a class="nav-link" href="#"><i class="bi bi-cart2 fs-16px"></i></a>
                             </li>
                         </ul>
                     </nav>
@@ -113,38 +113,74 @@
 
     <div class="swiper banner-principal">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <a href="#" class="swiper-slide">
                 <img class="img-fluid" src="img/banner.webp">
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="#" class="swiper-slide">
                 <img class="img-fluid" src="img/banner1.webp">
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="#" class="swiper-slide">
                 <img class="img-fluid" src="img/banner2.webp">
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="#" class="swiper-slide">
                 <img class="img-fluid" src="img/banner3.webp">
-            </div>
+            </a>
         </div>
-        <div class="swiper-button-next bg-white px-4 me-0 py-5 rounded-1 shadow-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        <div class="swiper-button-next bg-white me-0 py-5 rounded-1 shadow right-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-chevron-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
             </svg>
         </div>
-        <div class="swiper-button-prev bg-white px-4 me-0 py-5 rounded-1 shadow-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        <div class="swiper-button-prev bg-white me-0 py-5 rounded-1 shadow left-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-chevron-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
             </svg>
         </div>
         <div class="swiper-pagination">
-
         </div>
     </div>
 
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card border-0 py-2 rounded-0 shadow">
+                        <div class="card-body borda-azul">
+                            <div class="row">
+                                <div class="col-md-3  border-end">
+                                    <span class="fs-18px">Pagamento rápido e seguro</span><br>
+                                    <span class="fs-14px text-muted">com Mercado Pago</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="float-start mx-3" src="img/credit-card.svg">
+                                    <span class="fs-18px">Até 10 parcelas sem juros</span><br>
+                                    <a href="#" class="text-decoration-none">Ver mais</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="float-start mx-3" src="img/mercado-creditsv2.svg">
+                                    <span class="fs-18px">Parcelamento sem cartão</span><br>
+                                    <a href="#" class="text-decoration-none">Conheça o Mercado Crédito</a>
+                                </div>
+                                <div class="col-md-2">
+                                    <img class="float-start mx-3" src="img/qr.svg">
+                                    <span class="fs-18px">Via Pix</span><br>
+                                    <a href="#" class="text-decoration-none">Ver Mais</a>
+                                </div>
+                                <div class="col-md-1">
+                                    <a href="#" class="btn-plus border"><i class="bi bi-plus-circle-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <!-- Swiper @9 core version + navigation, pagination modules: -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -170,9 +206,9 @@
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
+                clickable: true,
             },
-            mousewheel: true,
-            keyboard: true,
+
         });
     </script>
 </body>
