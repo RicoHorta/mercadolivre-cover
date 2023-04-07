@@ -21,6 +21,32 @@ body {
     background: var(--primary-ml);
 }
 
+.text-green {
+    color: var(--info-ml);
+}
+
+.oferta-dia {
+    box-shadow: 5px 0 0 0 var(--secondary-ml), -5px 0 0 0 var(--secondary-ml);
+    background: var(--secondary-ml);
+    display: inline;
+    padding: 3px 0 !important;
+    position: relative;
+    color: white;
+    border-radius: 2px;
+
+}
+
+.mais-vendido {
+    box-shadow: 5px 0 0 0 #fca503, -5px 0 0 0 #fca503;
+    background: #fca503;
+    display: inline;
+    padding: 3px 0 !important;
+    position: relative;
+    color: white;
+    border-radius: 2px;
+
+}
+
 .logo__ml {
     background-image: url('/img/logo.png');
     background-size: 70% auto;
@@ -94,9 +120,14 @@ body {
 
 }
 
-.swiper {
+.swiper.banner {
     width: 100%;
     height: 100%;
+}
+
+.swiper.product {
+    width: 100%;
+    height: 470px;
 }
 
 .swiper-slide {
@@ -166,6 +197,27 @@ body {
     border: 1px solid rgba(127, 127, 127, 0.5);
 }
 
+.swiper-button-next.right-arrow-product {
+    display: none !important;
+    width: 72px !important;
+    height: 72px !important;
+    position: absolute !important;
+    right: -30px !important;
+    top: 180px;
+    border: 1px solid #dcdcdc;
+}
+
+.swiper-button-prev.left-arrow-product {
+    display: none !important;
+    width: 72px !important;
+    height: 72px !important;
+    position: absolute !important;
+    left: -30px !important;
+    top: 180px;
+    border: 1px solid #dcdcdc;
+}
+
+
 .borda-azul {
     border-left: 4px solid var(--secondary-ml);
 }
@@ -178,4 +230,20 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 4px 4px rgba(127, 127, 127, 0.1), -4px 0 4px 4px rgba(127, 127, 127, 0.1);
+}
+
+.card-content-prod {
+    height: 200px;
+    overflow: hidden;
+}
+
+.area-titulo {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
