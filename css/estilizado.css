@@ -236,8 +236,28 @@ body {
     box-shadow: 4px 4px 4px 4px rgba(127, 127, 127, 0.1), -4px 0 4px 4px rgba(127, 127, 127, 0.1);
 }
 
+.card:hover .card-content-prod.oculto {
+    box-shadow: 4px 4px 4px 4px rgba(127, 127, 127, 0.1), -4px 0 4px 4px rgba(127, 127, 127, 0.1);
+    height: 220px;
+}
+
+.oculto .area-titulo,
+.oculto .promo-text {
+    display: none;
+}
+
+.card-recolhido:hover .area-titulo,
+.card-recolhido:hover .promo-text {
+    display: flex;
+}
+
 .card-content-prod {
     height: 200px;
+    overflow: hidden;
+}
+
+.card-content-prod.oculto {
+    height: 125px;
     overflow: hidden;
 }
 
@@ -246,4 +266,9 @@ body {
     height: 60px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.banner-promo:hover {
+    box-shadow: 4px 4px 4px 4px rgba(127, 127, 127, 0.1), -4px 0 4px 4px rgba(127, 127, 127, 0.1);
+    cursor: pointer;
 }
