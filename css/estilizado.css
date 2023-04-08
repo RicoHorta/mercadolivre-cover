@@ -25,6 +25,10 @@ body {
     color: var(--info-ml);
 }
 
+.cinza-claro {
+    color: var(--cinza-claro);
+}
+
 .oferta-dia {
     box-shadow: 5px 0 0 0 var(--secondary-ml), -5px 0 0 0 var(--secondary-ml);
     background: var(--secondary-ml);
