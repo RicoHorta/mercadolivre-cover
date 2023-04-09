@@ -26,26 +26,39 @@
 
 <body class="bg-light">
     <header class="bg-ml shadow-none">
-        <div class="container">
+        <div class="container-xxl">
             <div class="row p-2 g-0">
-                <div class="col-xl-2 logo__ml">
+                <!-- LOGO -->
+                <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-2 logo__ml">
                     <!-- <img class="img-fluid" src="/img/logo.png"> -->
                 </div>
-                <div class="col-xl-6 d-flex align-items-center">
+                <!-- BUSCA -->
+                <div class="col-xl-6 col-lg-6 col-md-9 col-sm-9 col-8 d-flex align-items-center">
                     <div class="input-group shadow-sm">
                         <input class="form-control " type="search" placeholder="Buscar produtos, marcas e muito mais..."
                             id="busca">
-                        <button class="btn btn-outline-secondary rounded-end-1 border-0 bg-white" type="button"
-                            id="button-addon2"><i class="bi bi-search ps-3"></i>
+                        <button class="btn btn-outline-secondary d-none d-lg-block rounded-end-1 border-0 bg-white"
+                            type="button" id="button-addon2"><i class="bi bi-search ps-3"></i>
                         </button>
                     </div>
                 </div>
-                <div class="col-xl-4 ">
-                    <img class=" img-fluid disney float-end" src="/img/disney.webp2.webp">
+                <!-- DISNEY-PLUS -->
+                <div class="d-flex justify-content-center align-items-center col-xl-4 col-lg-4 col-md-2 col-sm-2 col-2">
+                    <div class="d-flex d-lg-none m-auto">
+                        <!-- ICONE MENU MOBILE-->
+                        <i id="hamburguer" class="fs-3 ps-4 pe-2 bi bi-list"></i>
+                        <!-- ICONE CARRINHO MOBILE-->
+                        <i id="carrinho" class="fs-3 ps-2 bi bi-cart2"></i>
+                        <!-- RABINHO DO MENU MOBILE-->
+                        <i id="tail" class="position-absolute bi bi-chevron-up"></i>
+                    </div>
+                    <img class="img-fluid ms-xl-5 disney d-none d-lg-block float-end" src="img/disney.webp">
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="col-xl-2 d-flex align-items-center">
+            <!-- SEGUNDA LINHA DE MENU PARA PC-->
+            <div class="row g-0 d-none d-lg-flex">
+                <!-- COLUNA CEP -->
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex align-items-center">
                     <div class="row ms-5 g-2">
                         <div class="col-3">
                             <i class="bi bi-geo-alt fs-4"></i>
@@ -57,7 +70,8 @@
 
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <!-- COLUNA MEIO - CATEGORIAS -->
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
                         <ul class="navbar-nav fs-14px pt-2">
                             <li class="nav-item dropdown">
@@ -89,7 +103,8 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-xl-4">
+                <!-- COLUNA DA DIREITA - CARRINHO -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
                         <ul class="navbar-nav ms-auto pt-2 fs-14px">
                             <li class="nav-item">
@@ -108,9 +123,20 @@
                     </nav>
                 </div>
             </div>
+            <!-- SEGUNDA LINHA DE MENU PARA MOBILE (INFORME O CEP)-->
+            <div class="row d-lg-none">
+                <div class="d-flex justify-content-between py-2 border-top  align-items-center">
+                    <span class="fs-14px text-muted">
+                        <img style="width:18px; height:18px;" class="text-muted"
+                            src="https://img.icons8.com/material-outlined/24/null/marker.png" />
+                        informe seu CEP
+                    </span>
+                    <i class="bi bi-chevron-right"></i>
+                </div>
+            </div>
         </div>
     </header>
-
+    <!-- SWIPER BANNER PRINCIPAL -->
     <div class="swiper banner-principal">
         <div class="swiper-wrapper">
             <a href="#" class="swiper-slide">
@@ -143,34 +169,34 @@
         <div class="swiper-pagination">
         </div>
     </div>
-
-    <section class="mt-5">
-        <div class="container">
+    <!-- BANNER MERCADO PAGO  -->
+    <section class="mt-lg-5">
+        <div class="container-lg">
             <div class="row">
-                <div class="col">
-                    <div class="card border-0 py-2 rounded-0 shadow">
+                <div class="col-md-12 px-0">
+                    <div class="card py-2 rounded-0 border-0 shadow">
                         <div class="card-body borda-azul">
                             <div class="row">
-                                <div class="col-md-3  border-end">
+                                <div class="col-md-0 col-lg-5 col-xl-3 col-xxl-3 border-end d-none d-lg-block">
                                     <span class="fs-18px">Pagamento rápido e seguro</span><br>
                                     <span class="fs-14px text-muted">com Mercado Pago</span>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-12 col-sm-10 col-md-10 col-lg-5 col-xl-4 col-xxl-3 ">
                                     <img class="float-start mx-3" src="img/credit-card.svg">
                                     <span class="fs-18px">Até 10 parcelas sem juros</span><br>
                                     <a href="#" class="text-decoration-none">Ver mais</a>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-0 col-lg-0 col-xl-4 col-xxl-3 d-none d-xl-block">
                                     <img class="float-start mx-3" src="img/mercado-creditsv2.svg">
                                     <span class="fs-18px">Parcelamento sem cartão</span><br>
                                     <a href="#" class="text-decoration-none">Conheça o Mercado Crédito</a>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-0 col-lg-0 col-xl-0 col-xxl-2 d-none d-xxl-block">
                                     <img class="float-start mx-3" src="img/qr.svg">
                                     <span class="fs-18px">Via Pix</span><br>
                                     <a href="#" class="text-decoration-none">Ver Mais</a>
                                 </div>
-                                <div class="col-md-1">
+                                <div class="col-sm-1 col-md-1 col-lg-2 col-xl-1 col-xxl-1 d-none d-sm-block">
                                     <a href="#" class="btn-plus border"><i class="bi bi-plus-circle-fill"></i></a>
                                 </div>
                             </div>
@@ -180,8 +206,14 @@
             </div>
         </div>
     </section>
-    <!-- Baseada na Ultima Visita -->
-    <section class="mt-5">
+    <!-- BAIXE O APP - MOBILE -->
+    <section class="d-lg-none">
+        <div class="container-fluid text-center">
+            <img src="img/baixe-o-app.webp" class="img-fluid rounded">
+        </div>
+    </section>
+    <!-- Baseada na Ultima Visita PC-->
+    <section class="mt-5 d-none d-md-block">
         <div class="container">
             <h3 class="text-muted text-center fs-18px">BASEADO NA SUA ÚLTIMA VISITA 🟡
                 <a href="#" class="ms-3 fs-18px text-decoration-none">Ver histórico</a>
@@ -413,9 +445,121 @@
             </div>
 
     </section>
+    <!-- BESEADA NA SUA ÚLTIMA VISITA MOBILE-->
+    <section class="d-block d-md-none ">
+        <div class="container-fluid">
+            <div class="row px-2">
+                <div class="col-12">
+                    <!-- TÓPICO DO CARD-->
+                    <div class="row">
+                        <div style="box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5)"
+                            class="text-muted text-center fs-18px col-12 bg-white py-4 border-top border-bottom-0 rounded-0">
+                            BASEADO NA SUA ÚLTIMA VISITA 🟡
+                        </div>
+                    </div>
+                    <!-- CONTEUDO DOS ITENS-->
+                    <div class="row row-cols-2">
+                        <!-- ITEM MOBILE-->
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col card border-0 rounded-0 p-0 m-0">
+                            <a href="#" class="stretched-link">
+                                <img class="border-bottom card-img-top" src="img/products/tv.webp">
+                            </a>
+                            <div class="card-body card-content-prod text-start">
+                                <span class="fs-12px text-muted text-decoration-line-through">
+                                    R$ 2.599
+                                </span><br>
+                                <span class="h5 card-title fs-3">
+                                    R$ 1.399
+                                    <span class="text-green fs-14px">30% OFF</span>
+                                </span>
+                                <p class="text-muted fs-14px area-titulo mt-2">
+                                    Smart TV Samsung UN50AU7700GXZD LED 4K 50" 100V/240V
+                                </p>
+                                <p class="fw-bold text-green fs-14px">Frete Grátis <i
+                                        class="bi bi-lightning-charge-fill"></i> <i>Full</i>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ITEM MOBILE-->
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col card border-0 rounded-0 p-0 m-0">
+                            <a href="#" class="stretched-link">
+                                <img class="border-bottom card-img-top" src="img/products/celular.webp">
+                            </a>
+                            <div class="card-body card-content-prod text-start">
+                                <span class="fs-12px text-muted text-decoration-line-through">
+                                    R$ 2.599
+                                </span><br>
+                                <span class="h5 card-title fs-3">
+                                    R$ 1.399
+                                    <span class="text-green fs-14px">30% OFF</span>
+                                </span>
+                                <p class="text-muted fs-14px area-titulo mt-2">
+                                    Smart TV Samsung UN50AU7700GXZD LED 4K 50" 100V/240V
+                                </p>
+                                <p class="fw-bold text-green fs-14px">Frete Grátis <i
+                                        class="bi bi-lightning-charge-fill"></i> <i>Full</i>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ITEM MOBILE-->
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col card border-0 rounded-0 p-0 m-0">
+                            <a href="#" class="stretched-link">
+                                <img class="border-bottom card-img-top" src="img/products/ferramentas.webp">
+                            </a>
+                            <div class="card-body card-content-prod text-start">
+                                <span class="fs-12px text-muted text-decoration-line-through">
+                                    R$ 2.599
+                                </span><br>
+                                <span class="h5 card-title fs-3">
+                                    R$ 1.399
+                                    <span class="text-green fs-14px">30% OFF</span>
+                                </span>
+                                <p class="text-muted fs-14px area-titulo mt-2">
+                                    Smart TV Samsung UN50AU7700GXZD LED 4K 50" 100V/240V
+                                </p>
+                                <p class="fw-bold text-green fs-14px">Frete Grátis <i
+                                        class="bi bi-lightning-charge-fill"></i> <i>Full</i>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ITEM MOBILE-->
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col card border-0 rounded-0 p-0 m-0">
+                            <a href="#" class="stretched-link">
+                                <img class="border-bottom card-img-top" src="img/products/bicicleta.webp">
+                            </a>
+                            <div class="card-body card-content-prod text-start">
+                                <span class="fs-12px text-muted text-decoration-line-through">
+                                    R$ 2.599
+                                </span><br>
+                                <span class="h5 card-title fs-3">
+                                    R$ 1.399
+                                    <span class="text-green fs-14px">30% OFF</span>
+                                </span>
+                                <p class="text-muted fs-14px area-titulo mt-2">
+                                    Smart TV Samsung UN50AU7700GXZD LED 4K 50" 100V/240V
+                                </p>
+                                <p class="fw-bold text-green fs-14px">Frete Grátis <i
+                                        class="bi bi-lightning-charge-fill"></i> <i>Full</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RODAPÉ DO CARD-->
+                    <div class="row">
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col-12 bg-white py-4 rounded-0">
+                            <a href="#" class="fw-bold text-decoration-none">Ver Todos
+                                <span class="float-end"><i class="bi bi-chevron-right"></i></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Pegue Seu CUPOM -->
-    <section mt-5>
-        <div class="container">
+    <section class="mt-5 ">
+        <div class="container-lg">
             <h3 class="text-muted text-center text-center fs-18px">VAI TER CUPOM NO DESCONTAÇO, SIM! 😱
                 <a href="#" class="ms-3 fs-18px text-decoration-none">Eu quero!</a>
             </h3>
@@ -426,8 +570,8 @@
             </div>
         </div>
     </section>
-    <!-- Ofertas Do Dia -->
-    <section class="mt-5">
+    <!-- Ofertas Do Dia PC-->
+    <section class="mt-5 d-none d-md-block">
         <div class="container">
             <h3 class="text-muted text-center fs-18px">OFERTAS DO DIA 🔥
                 <a href="#" class="ms-3 fs-18px text-decoration-none">Ver mais</a>
@@ -667,9 +811,117 @@
             </div>
 
     </section>
+    <!-- OFERTAS DO DIA MOBILE-->
+    <section class="mt-4 d-block d-md-none">
+        <div class="container-fluid">
+            <div class="row px-2">
+                <div class="col-12">
+                    <!-- TÓPICO DO CARD-->
+                    <div class="row">
+                        <div style="box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5)"
+                            class="text-muted text-center fs-18px col-12 bg-white py-4 border-top border-bottom-0 rounded-0">
+                            OFERTAS DO DIA 🔥
+                        </div>
+                    </div>
+                    <!-- CONTEUDO DOS ITENS-->
+                    <div class="row row-cols-1">
+                        <!-- ITEM MOBILE-->
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col card border-0 rounded-0 p-0 m-0">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <a href="#" class="stretched-link">
+                                        <img class="card-img-top" src="img/products/tv.webp">
+                                    </a>
+                                </div>
+                                <div class="col-7 d-flex align-items-center py-3">
+                                    <div class="card-body card-content-prod text-start">
+                                        <span class="fs-12px text-muted text-decoration-line-through">
+                                            R$ 2.599
+                                        </span><br>
+                                        <span class="h5 card-title fs-3">
+                                            R$ 1.399
+                                            <span class="text-green fs-14px">30% OFF</span>
+                                        </span>
+                                        <p class="text-muted fs-14px area-titulo mt-2">
+                                            Smart TV Samsung UN50AU7700GXZD LED 4K 50" 100V/240V
+                                        </p>
+                                        <p class="fw-bold text-green fs-14px">Frete Grátis <i
+                                                class="bi bi-lightning-charge-fill"></i> <i>Full</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM MOBILE-->
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col card border-0 rounded-0 p-0 m-0">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <a href="#" class="stretched-link">
+                                        <img class="card-img-top" src="img/products/celular.webp">
+                                    </a>
+                                </div>
+                                <div class="col-7 d-flex align-items-center py-3">
+                                    <div class="card-body card-content-prod text-start">
+                                        <span class="fs-12px text-muted text-decoration-line-through">
+                                            R$ 2.599
+                                        </span><br>
+                                        <span class="h5 card-title fs-3">
+                                            R$ 1.399
+                                            <span class="text-green fs-14px">30% OFF</span>
+                                        </span>
+                                        <p class="text-muted fs-14px area-titulo mt-2">
+                                            Smart TV Samsung UN50AU7700GXZD LED 4K 50" 100V/240V
+                                        </p>
+                                        <p class="fw-bold text-green fs-14px">Frete Grátis <i
+                                                class="bi bi-lightning-charge-fill"></i> <i>Full</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM MOBILE-->
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col card border-0 rounded-0 p-0 m-0">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <a href="#" class="stretched-link">
+                                        <img class="card-img-top" src="img/products/ferramentas.webp">
+                                    </a>
+                                </div>
+                                <div class="col-7 d-flex align-items-center py-3">
+                                    <div class="card-body card-content-prod text-start">
+                                        <span class="fs-12px text-muted text-decoration-line-through">
+                                            R$ 2.599
+                                        </span><br>
+                                        <span class="h5 card-title fs-3">
+                                            R$ 1.399
+                                            <span class="text-green fs-14px">30% OFF</span>
+                                        </span>
+                                        <p class="text-muted fs-14px area-titulo mt-2">
+                                            Smart TV Samsung UN50AU7700GXZD LED 4K 50" 100V/240V
+                                        </p>
+                                        <p class="fw-bold text-green fs-14px">Frete Grátis <i
+                                                class="bi bi-lightning-charge-fill"></i> <i>Full</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RODAPÉ DO CARD-->
+                    <div class="row">
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col-12 bg-white py-4 rounded-0">
+                            <a href="#" class="fw-bold text-decoration-none">Ver Todas
+                                <span class="float-end"><i class="bi bi-chevron-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- beneficios do Mercado Pontos -->
-    <section mt-5>
-        <div class="container">
+    <section class="mt-5">
+        <div class="container-lg">
             <h3 class="text-muted text-center fs-18px">OS MELHORES BENEFÍCIOS COM NÍVEL 6 DO MERCADO LIVRE ✨
                 <a href="#" class="ms-3 fs-18px text-decoration-none">Assine já!</a>
             </h3>
@@ -705,9 +957,9 @@
             </div>
         </div>
     </section>
-    <!-- PROPAGANDA -->
+    <!-- PROPAGANDA VERDE-->
     <section class="mt-4">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <div class="col">
                     <a href="#">
@@ -922,6 +1174,20 @@
                 prevEl: ".swiper-button-prev",
             },
             loop: true,
+            breakpoints: {
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                }
+            }
         });
     </script>
 </body>

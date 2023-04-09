@@ -29,6 +29,7 @@ body {
     color: var(--cinza-claro);
 }
 
+
 .oferta-dia {
     box-shadow: 5px 0 0 0 var(--secondary-ml), -5px 0 0 0 var(--secondary-ml);
     background: var(--secondary-ml);
@@ -53,9 +54,30 @@ body {
 
 .logo__ml {
     background-image: url('/img/logo.png');
-    background-size: 70% auto;
+    background-size: 140px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media only screen and (max-width:991px) {
+    .logo__ml {
+        background-image: url('/img/logo__small@2x.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .borda-azul {
+        border: none !important;
+    }
+
+}
+
+#tail {
+    top: 42px;
+    margin-left: 27px;
+    color: #dcdcdc;
+    background: var(--primary-ml);
 }
 
 #busca {
