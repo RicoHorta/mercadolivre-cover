@@ -55,7 +55,116 @@
                     <img class="img-fluid ms-xl-5 disney d-none d-lg-block float-end" src="img/disney.webp">
                 </div>
             </div>
-            <!-- SEGUNDA LINHA DE MENU PARA PC-->
+            <!-- MENU MOBILE (CELULAR)-->
+            <div id="menu-mobile" class="row border-top d-lg-none">
+                <!-- ÁREA DO LOGIN-->
+                <div class="col-12 bg-ml">
+                    <div class="row d-flex align-items-center pt-3 text-dark">
+                        <div id="colUserImg" class="col-2 text-center align-items-center">
+                            <img class="fs-3 p rounded-circle bg-light"
+                                src="https://img.icons8.com/cotton/64/null/person-male--v2.png" />
+                        </div>
+                        <div id="colLogin" class="col-10 ps-4">
+                            <h3 class="fs-18px fw-bold p-0 m-0">Bem-vindo</h3>
+                            <p class="fs-14px text-muted">Entre na sua conta para ver suas compras, favoritos etc.</p>
+                        </div>
+                    </div>
+                    <div class="row g-1 pb-3">
+                        <div class="col">
+                            <button class="w-100 btn btn-primary py-2">Entre</button>
+                        </div>
+                        <div class="col">
+                            <button class="w-100 btn btn-light text-blue-ml border-blue-ml py-2">Crie a sua
+                                conta</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- OPÇÕES DO MENU-->
+                <div class="col-12 p-0 bg-white">
+                    <ul class="nav flex-column p-0 m-0">
+                        <li class="nav-item mt-3 p-0">
+                            <a class="fs-14px nav-link mobile text-dark active" aria-current="page" href="#">
+                                <i class="mx-2 bi bi-house"></i>
+                                Início
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-14px nav-link mobile text-dark" href="#">
+                                <i class="mx-2 bi bi-tag"></i>
+                                Ofertas do Dia
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-14px nav-link mobile text-dark" href="#">
+                                <i class="mx-2 bi bi-clock-history"></i>
+                                Histórico
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-14px nav-link mobile text-dark" href="#">
+                                <i class="mx-2 bi bi-headset"></i>
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column p-0 m-0 mt-3">
+                        <li class="nav-item mt-3 p-0">
+                            <a class="fs-14px nav-link mobile text-dark" aria-current="page" href="#">
+                                <i class="mx-2 mdi mdi-tshirt-crew-outline"></i>
+                                Moda
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-14px nav-link mobile text-dark" href="#">
+                                <i class="mx-2 bi bi-star"></i>
+                                Mais Vendidos <span class="ms-3 badge text-bg-primary">NOVO</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-14px nav-link mobile text-dark" href="#">
+                                <i class="mx-2 bi bi-airplane"></i>
+                                Compra Internacional <span class="ms-3 badge text-bg-primary">NOVO</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-14px nav-link mobile text-dark" href="#">
+                                <i class="mx-2 bi bi-shop-window"></i>
+                                Lojas Oficiais
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-14px nav-link mobile text-dark" href="#">
+                                <i class="mx-2 bi bi-list-task"></i>
+                                Categorias
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column p-0 m-0 mt-3">
+                        <li class="nav-item mt-3 p-0">
+                            <a class="fs-14px nav-link mobile text-dark" aria-current="page" href="#">
+                                <i class="mx-2 bi bi-card-text"></i>
+                                Resumo
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="fs-14px nav-link mobile text-dark" href="#">
+                                <i class="mx-2 bi bi-tags"></i>
+                                Vender
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column p-0 m-0 mt-3 pb-3">
+                        <li class="nav-item mt-3 p-0">
+                            <a class="fs-14px nav-link mobile text-dark" aria-current="page" href="#">
+                                <i class="mx-2 bi bi-download"></i>
+                                Compre e venda com o app!
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- SEGUNDA LINHA DE MENU (CEP) PARA PC-->
             <div class="row g-0 d-none d-lg-flex">
                 <!-- COLUNA CEP -->
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex align-items-center">
@@ -124,7 +233,7 @@
                 </div>
             </div>
             <!-- SEGUNDA LINHA DE MENU PARA MOBILE (INFORME O CEP)-->
-            <div class="row d-lg-none">
+            <div id="row-cep-mobile" class="row d-lg-none">
                 <div class="d-flex justify-content-between py-2 border-top  align-items-center">
                     <span class="fs-14px text-muted">
                         <img style="width:18px; height:18px;" class="text-muted"
@@ -565,7 +674,7 @@
             </h3>
             <div class="row">
                 <div class="col">
-                    <img class="mt-4 banner-promo rounded-1 img-fluid" src="/img/banner5.webp">
+                    <img id="banner-croped" class="mt-4 banner-promo rounded-1 img-fluid" src="/img/cupons-mobile.webp">
                 </div>
             </div>
         </div>
@@ -919,15 +1028,16 @@
             </div>
         </div>
     </section>
-    <!-- beneficios do Mercado Pontos -->
+    <!-- beneficios do Mercado Pontos Banner-->
     <section class="mt-5">
-        <div class="container-lg">
+        <div class="container">
             <h3 class="text-muted text-center fs-18px">OS MELHORES BENEFÍCIOS COM NÍVEL 6 DO MERCADO LIVRE ✨
                 <a href="#" class="ms-3 fs-18px text-decoration-none">Assine já!</a>
             </h3>
             <div class="row">
                 <div class="col">
-                    <img class="mt-4 banner-promo rounded-1 img-fluid" src="/img/banner4.webp">
+                    <img id="banner-croped" class="mt-4 banner-promo rounded-1 img-fluid"
+                        src="/img/Beneficios-1499.webp">
                 </div>
             </div>
         </div>
@@ -957,8 +1067,63 @@
             </div>
         </div>
     </section>
+    <!-- BENEFICIOS DO MERCADO PONTOS UMA COLUNA - MOBILE-->
+    <section class="mt-5 d-block d-md-none">
+        <div class="container-fluid">
+            <div class="row px-2">
+                <div class="col-12">
+                    <!-- TÓPICO DO CARD-->
+                    <div class="row px-2">
+                        <div style="box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5)"
+                            class="text-muted text-center fs-18px col-12 bg-white py-4 border-top border-bottom-0 rounded-0">
+                            BENEFÍCIOS DO MERCADO PONTOS 💛
+                        </div>
+                    </div>
+                    <!-- ITEM BENEFICIO-->
+                    <div class="row px-2">
+                        <div style="box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5)"
+                            class="col-12 bg-white border-bottom-0 border-top rounded-0">
+                            <a href="#" class="bg-white py-2">
+                                <img src="img/banner7.webp" class="py-2 rounded img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ITEM BENEFICIO-->
+                    <div class="row px-2">
+                        <div style="box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5)"
+                            class="col-12 bg-white border-bottom-0 border-top rounded-0">
+                            <a href="#" class="bg-white py-2">
+                                <img src="img/banner8.webp" class="py-2 rounded img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ITEM BENEFICIO-->
+                    <div class="row px-2">
+                        <div style="box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5)"
+                            class="col-12 bg-white border-bottom-0 border-top rounded-0">
+                            <a href="#" class="bg-white py-2">
+                                <img src="img/banner9.webp" class="py-2 rounded img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- RODAPÉ DO CARD-->
+                    <div class="row px-2">
+                        <div style="box-shadow: 0 0 1px 0 rgba(0,0,0,0.5)" class="col-12 bg-white py-4 rounded-0">
+                            <a href="#" class="fw-bold text-decoration-none">Ver Todos
+                                <span class="float-end"><i class="bi bi-chevron-right"></i></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- PROPAGANDA VERDE-->
-    <section class="mt-4">
+    <section class="mt-4 d-none d-md-block">
         <div class="container-lg">
             <div class="row">
                 <div class="col">
@@ -969,7 +1134,7 @@
             </div>
         </div>
     </section>
-    <!-- MARCOS MION-->
+    <!-- MARCOS MION PC-->
     <section class="mt-0 d-none d-md-block">
         <div class="container">
             <div class="row mt-0 ">
@@ -1000,8 +1165,35 @@
             </div>
         </div>
     </section>
-
-
+    <!-- MARCOS MION PC-->
+    <section class="mt-0 d-block d-md-none">
+        <div class="container">
+            <div class="row mt-0 ">
+                <div class="col-md-12 mt-3">
+                    <div class="card mb-3" style="max-width: 81rem;">
+                        <div class="row g-0">
+                            <div class="col-md-12 p-3">
+                                <h2 class="mt-3">Baixe o App Mercado Livre<br>gratuitamente</h2>
+                                <br>
+                                <p>Buscando ofertas exclusivas com envio grátis em até 24h? Baixe o app Mercado Livre e
+                                    aproveite
+                                    para fazer suas compras online com segurança! São diversas categorias de produtos
+                                    com as
+                                    melhores ofertas: eletrodomésticos, TV, geladeira, fogão, roupas, calçados,
+                                    eletrônicos,
+                                    celulares, pc gamer e muito mais. Além de todos esses produtos, você pode fazer suas
+                                    compras de
+                                    supermercado!</p>
+                                <a href="#">
+                                    <img src="img/MMion.webp" class="img-fluid rounded pt-3">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- RODAPE -->
     <footer class="bg-white py-3 my-4">
         <div class="container">
@@ -1015,7 +1207,7 @@
                         boleto com o Mercado Crédito.</p>
                     <a href="#" class="text-decoration-none">Como pagar com Mercado Pago</a>
                 </div>
-                <div class="col-md-1 d-flex justify-content-center align-items-center"
+                <div class="d-none d-md-block col-md-1 d-flex justify-content-center align-items-center"
                     style="margin-top:120px; height: 70px">
                     <div class="vr"></div>
                 </div>
@@ -1026,7 +1218,7 @@
                         milhares de produtos. É um benefício do Mercado Pontos.</p>
                     <a href="#" class="text-decoration-none">Saiba mais sobre este benefício</a>
                 </div>
-                <div class="col-md-1 d-flex justify-content-center align-items-center"
+                <div class="d-none d-md-block col-md-1 d-flex justify-content-center align-items-center"
                     style="margin-top:120px; height: 70px">
                     <div class="vr"></div>
                 </div>
@@ -1127,8 +1319,52 @@
         crossorigin="anonymous"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- ANIMAR O BOTÂO CHEVRON DO FOOTER -->
+
+
     <script>
+
+        //PEGAR O COMPONENTE
+        const busca = document.getElementById('busca');
+        const menu = document.getElementById('menu-mobile');
+        const cepMobile = document.getElementById('row-cep-mobile');
+        const tail = document.getElementById('tail');
+
+        //O MENU E O RABINHO SEMPRE COMEÇA FECHADO
+        menu.classList.toggle("d-none");
+        tail.classList.toggle("d-none");
+
+        //VERIFICAR TAMANHO SE FOR MENOR QUE 500PX TROCAR O PLACEHOLDER
+        if (window.innerWidth < 500) {
+            busca.setAttribute('placeholder', 'Estou buscando...');
+        }
+
+        //DETECTAR VARIAÇÃO DE TAMANHO DA TELA
+        window.addEventListener('resize', () => {
+            if (window.innerWidth < 500) {
+                busca.setAttribute('placeholder', 'Estou buscando...');
+            } else {
+                busca.setAttribute('placeholder', 'Buscar produtos, marcas e muito mais...');
+            }
+        })
+
+        //DETECTAR QUANDO CLICAR NO "HAMBURGUER"
+        document.getElementById('hamburguer').addEventListener("click", () => {
+            var icone = document.getElementById('hamburguer').className;
+            if (icone == "fs-3 ps-4 pe-2 bi bi-list") {
+                document.getElementById('hamburguer').className = "fs-3 ps-4 pe-2 bi bi-x-lg";
+            } else {
+                document.getElementById('hamburguer').className = "fs-3 ps-4 pe-2 bi bi-list";
+            }
+
+            //APARECER / DESAPARECER MENU E CEP MOBILE
+            menu.classList.toggle("d-none");
+            tail.classList.toggle("d-none");
+            cepMobile.classList.toggle("d-none");
+
+        })
+
+        <!-- ANIMAR O BOTÂO CHEVRON DO FOOTER -->
+
         document.getElementById('btn-information').addEventListener("click", () => {
             var classe = document.getElementById('chevron').className;
             if (classe == "bi bi-chevron-up ms-2") {

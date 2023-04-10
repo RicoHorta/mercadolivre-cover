@@ -64,13 +64,12 @@ body {
         background-image: url('/img/logo__small@2x.png');
         background-size: 50px;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: left;
     }
 
-    .borda-azul {
+    .card-body.borda-azul {
         border: none !important;
     }
-
 }
 
 #tail {
@@ -245,7 +244,11 @@ body {
 
 
 .borda-azul {
-    border-left: 4px solid var(--secondary-ml);
+    border-left: 4px solid var(--secondary-ml) !important;
+}
+
+.border-blue-ml {
+    border: 1px solid var(--secondary-ml) !important;
 }
 
 .btn-plus {
@@ -297,4 +300,20 @@ body {
 .banner-promo:hover {
     box-shadow: 4px 4px 4px 4px rgba(127, 127, 127, 0.1), -4px 0 4px 4px rgba(127, 127, 127, 0.1);
     cursor: pointer;
+}
+
+#banner-croped {
+    width: 147vh;
+    height: 25vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.nav-link.active {
+    background: #f5f5f5;
+    color: var(--secondary-ml) !important;
+}
+
+.nav-link.mobile i {
+    font-size: 22px !important;
 }
